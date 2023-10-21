@@ -1,7 +1,7 @@
 {
   "bootstrap-ids": "",
   "bootstrap-ips": "",
-  "chain-aliases-file": "/etc/avalanche/avalanchego/mounted-conf/chains/aliases.json",
+  "chain-aliases-file": "/etc/avalanche/avalanchego/conf/chains/aliases.json",
   "chain-config-dir": "/etc/avalanche/avalanchego/mounted-conf/chains",
   "db-dir": "/var/lib/avalanchego/db",
   "http-allowed-hosts": "*",
