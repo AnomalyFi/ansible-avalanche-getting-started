@@ -35,7 +35,7 @@ The complete documentation related to this project starts by the [Local Test Net
 3. Install the `ash.avalanche` collection:
 
    ```bash
-   ansible-galaxy collection install git+https://github.com/AshAvalanche/ansible-avalanche-collection.git
+   ansible-galaxy collection install git+https://github.com/AnomalyFi/ansible-avalanche-collection.git
    ```
 
 4. Initialize the Terraform modules:

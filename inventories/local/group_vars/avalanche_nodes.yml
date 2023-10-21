@@ -11,7 +11,19 @@ avalanchego_https_local_certs_dir: "{{ inventory_dir }}/../../files/https"
 avalanchego_staking_use_local_certs: true
 avalanchego_staking_local_certs_dir: "{{ inventory_dir }}/../../files/staking"
 
-avalanchego_vms_install: []
+avalanchego_vms_list:
+  tokenvm:
+    download_url: https://github.com/AnomalyFi/nodekit-seq/releases/download
+    id: jvFWMths2qLjsZgbyEKx82PkQv2YWR4rotjQfxV55vLLogjNA
+    # Used in Ash CLI
+    ash_vm_type: Custom
+    aliases:
+      - tokenvm
+    versions_comp:
+      0.9.3:
+        ge: 1.10.9
+        le: 1.10.11
+
 
 avalanchego_track_subnets: []
 
@@ -19,3 +31,4 @@ avalanchego_node_json:
   http-allowed-hosts: "*"
 
 validator_stake_or_weight: 100
+

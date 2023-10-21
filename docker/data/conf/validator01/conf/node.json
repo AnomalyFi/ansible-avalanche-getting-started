@@ -1,8 +1,8 @@
 {
   "bootstrap-ids": "",
   "bootstrap-ips": "",
-  "chain-aliases-file": "/etc/avalanche/avalanchego/conf/chains/aliases.json",
-  "chain-config-dir": "/etc/avalanche/avalanchego/conf/chains",
+  "chain-aliases-file": "/etc/avalanche/avalanchego/mounted-conf/chains/aliases.json",
+  "chain-config-dir": "/etc/avalanche/avalanchego/mounted-conf/chains",
   "db-dir": "/var/lib/avalanchego/db",
   "http-allowed-hosts": "*",
   "http-host": "0.0.0.0",
@@ -17,7 +17,7 @@
   "staking-port": 9651,
   "staking-tls-cert-file": "/etc/avalanche/avalanchego/staking/validator01.crt",
   "staking-tls-key-file": "/etc/avalanche/avalanchego/staking/validator01.key",
-  "subnet-config-dir": "/etc/avalanche/avalanchego/conf/subnets",
+  "subnet-config-dir": "/etc/avalanche/avalanchego/mounted-conf/subnets",
   "track-subnets": "29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL",
   "vm-aliases-file": "/etc/avalanche/avalanchego/conf/vms/aliases.json"
 }

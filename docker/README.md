@@ -38,10 +38,10 @@ Out of simplicity, the `build.sh` script is provided:
 cd docker
 
 # Set the AvalancheGo version
-export AVALANCHEGO_VERSION=1.10.9
+export AVALANCHEGO_VERSION=1.10.10
 # Set the Avalanche VM to install with its version
-export AVALANCHEGO_VM_NAME=subnet-evm
-export AVALANCHEGO_VM_VERSION=0.5.6
+export AVALANCHEGO_VM_NAME=tokenvm
+export AVALANCHEGO_VM_VERSION=0.9.3
 
 ./build.sh
 ```
