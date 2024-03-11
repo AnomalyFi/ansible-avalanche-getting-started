@@ -11,9 +11,9 @@
   hosts: frontend
   become: true
   tasks:
-    - name: Upload files/eth-l1 dir
+    - name: Upload files/eth-pos-devnet dir
       copy:
-        src: "{{ playbook_dir }}/../files/eth-l1"
+        src: "{{ playbook_dir }}/../files/eth-pos-devnet"
         dest: /opt
         mode: 0755
         owner: root
@@ -34,5 +34,5 @@
 
     - name: Create eth-l1 container
       community.docker.docker_compose_v2:
-        project_src: /opt/eth-l1
+        project_src: /opt/eth-pos-devnet
         state: present
