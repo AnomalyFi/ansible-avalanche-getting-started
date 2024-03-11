@@ -1,0 +1,3 @@
+[submodule "files/nodekit-seq"]
+	path = files/nodekit-seq
+	url = https://github.com/AnomalyFi/nodekit-seq
