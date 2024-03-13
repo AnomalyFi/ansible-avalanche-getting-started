@@ -16,12 +16,18 @@ avalanchego_vms_install:
 
 avalanchego_track_subnets:
   []
-  # - 29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL
+  # - 2dqvrAFWjqQV5Gdr5zc5gkmHChyp7ZrQvfdg1E57GrNH6guGNY
 
-avalanchego_subnets_configs:
-  29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL:
-    ethRPCAddr: http://10.153.238.164:8545
-    ethWSAddr: ws://10.153.238.164:8546
+# avalanchego_subnets_configs:
+#   29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL:
+#     ethRPCAddr: http://10.153.238.164:8545
+#     ethWSAddr: ws://10.153.238.164:8546
+
+avalanchego_chains_configs:
+  24ummBEhg4mA8DV1ojNjpHpQVipSiVZUB1zhcmgLF7woWFmgDz:
+    ethRPCAddr: http://10.153.238.182:8545
+    ethWSAddr: ws://10.153.238.182:8546
+
 
 avalanchego_node_json:
   http-allowed-hosts: "*"
