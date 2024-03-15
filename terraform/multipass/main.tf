@@ -23,7 +23,7 @@ resource "multipass_instance" "validators" {
   name           = each.key
   image          = "jammy"
   cpus           = 1
-  memory         = "1GiB"
+  memory         = "3GiB"
   disk           = "20GiB"
   cloudinit_file = "../../files/multipass/cloud-init.yaml"
 }
