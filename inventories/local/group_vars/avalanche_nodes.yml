@@ -1,7 +1,7 @@
 avalanchego_chains_configs:
   2ArqB8j5FWQY9ZBtA3QFJgiH9EmXzbqGup5kuyPQZVZcL913Au:
-    ethRPCAddr: http://10.153.238.179:8545
-    ethWSAddr: ws://10.153.238.179:8546
+    ethRPCAddr: http://10.153.238.171:8545
+    ethWSAddr: ws://10.153.238.171:8546
 avalanchego_http_host: 0.0.0.0
 avalanchego_https_enabled: false
 avalanchego_https_local_certs_dir: '{{ inventory_dir }}/../../files/https'
@@ -10,6 +10,12 @@ avalanchego_node_json:
   http-allowed-hosts: '*'
 avalanchego_staking_local_certs_dir: '{{ inventory_dir }}/../../files/staking'
 avalanchego_staking_use_local_certs: true
+avalanchego_subnets_configs:
+  29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL:
+    consensusParameters:
+      maxItemProcessingTime: 300000000000
+    proposerMinBlockDelay: 0
+    proposerNumHistoricalBlocks: 5000
 avalanchego_track_subnets:
   []
 avalanchego_version: 1.10.10
@@ -26,10 +32,3 @@ avalanchego_vms_list:
         ge: 1.10.10
         le: 1.10.12
 validator_stake_or_weight: 100
-
-avalanchego_subnets_configs:
-  29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL:
-    proposerMinBlockDelay: 0
-    proposerNumHistoricalBlocks: 5000
-    consensusParameters: 
-      maxItemProcessingTime: 300000000000
