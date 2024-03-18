@@ -1,7 +1,7 @@
 avalanchego_chains_configs:
   2ArqB8j5FWQY9ZBtA3QFJgiH9EmXzbqGup5kuyPQZVZcL913Au:
-    ethRPCAddr: http://10.153.238.171:8545
-    ethWSAddr: ws://10.153.238.171:8546
+    ethRPCAddr: http://3.142.114.28:8545
+    ethWSAddr: ws://3.142.114.28:8546
 avalanchego_http_host: 0.0.0.0
 avalanchego_https_enabled: false
 avalanchego_https_local_certs_dir: '{{ inventory_dir }}/../../files/https'
