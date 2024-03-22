@@ -1,7 +1,7 @@
 avalanchego_chains_configs:
   2ArqB8j5FWQY9ZBtA3QFJgiH9EmXzbqGup5kuyPQZVZcL913Au:
-    ethRPCAddr: http://3.142.114.28:8545
-    ethWSAddr: ws://3.142.114.28:8546
+    ethRPCAddr: http://3.14.144.103:8545
+    ethWSAddr: ws://3.14.144.103:8546
 avalanchego_http_host: 0.0.0.0
 avalanchego_https_enabled: false
 avalanchego_https_local_certs_dir: '{{ inventory_dir }}/../../files/https'
@@ -19,7 +19,7 @@ avalanchego_subnets_configs:
 avalanchego_track_subnets: []
 avalanchego_version: 1.10.10
 avalanchego_vms_install:
-  tokenvm: 0.9.5
+  tokenvm: 0.9.7
 avalanchego_vms_list:
   tokenvm:
     ash_vm_type: Custom
@@ -27,7 +27,7 @@ avalanchego_vms_list:
     download_url: https://github.com/AnomalyFi/nodekit-seq/releases/download
     id: tHBYNu8ikqo4MWMHehC9iKB9mR5tB3DWzbkYmTfe9buWQ5GZ8
     versions_comp:
-      0.9.5:
+      0.9.7:
         ge: 1.10.10
         le: 1.10.12
 validator_stake_or_weight: 100
