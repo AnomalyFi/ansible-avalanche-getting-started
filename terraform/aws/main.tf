@@ -28,6 +28,10 @@ resource "aws_key_pair" "kp" {
   provisioner "local-exec" {
     command = "echo '${tls_private_key.pk.private_key_pem}' > ../../files/ansible_key.pem && chmod 400 ../../files/ansible_key.pem"
   }
+  provisioner "local-exec" {
+    when = destroy
+    command = "rm ../../files/ansible_key.pem"
+  }
 }
 
 resource "aws_security_group" "ssh_eth_sg" {
