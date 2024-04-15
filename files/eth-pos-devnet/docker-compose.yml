@@ -106,6 +106,7 @@ services:
       - --password=/execution/geth_password.txt
       - --nodiscover
       - --syncmode=full
+      - --rpc.allow-unprotected-txs
     ports:
       - 8551:8551
       - 8545:8545
