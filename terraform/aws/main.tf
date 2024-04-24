@@ -12,8 +12,8 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-2"
-  profile = "PowerUserAccess-975050373654"
+  region = "us-east-1"
+  profile = "default"
 }
 
 resource "tls_private_key" "pk" {
