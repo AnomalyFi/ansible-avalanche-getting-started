@@ -13,7 +13,6 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  profile = "default"
 }
 
 resource "tls_private_key" "pk" {
