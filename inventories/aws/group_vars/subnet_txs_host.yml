@@ -9,7 +9,7 @@ subnet_blockchains_list:
       hrp: token
       stateBranchFactor: 16
       minBlockGap: 100
-      minEmptyBlockGap: 2500
+      minEmptyBlockGap: 2000
       minUnitPrice:
         - 100
         - 100
