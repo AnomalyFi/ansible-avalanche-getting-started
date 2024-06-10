@@ -4,10 +4,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.0"
     }
-    docker = {
-      source  = "kreuzwerker/docker"
-      version = "3.0.2"
-    }
+    # docker = {
+    #   source  = "kreuzwerker/docker"
+    #   version = "3.0.2"
+    # }
   }
 }
 
@@ -221,39 +221,39 @@ output "frontend_ip" {
 }
 
 # Docker
-provider "docker" {}
+# provider "docker" {}
 
 # NGINX configuration templating
-resource "local_file" "nginx_conf" {
-  content  = templatefile(
-    "nginx.tftpl",
-    {
-      validators = values(data.aws_instance.validators_info)
-    }
-  )
-  filename = abspath("nginx.conf")
-}
+# resource "local_file" "nginx_conf" {
+#   content  = templatefile(
+#     "nginx.tftpl",
+#     {
+#       validators = values(data.aws_instance.validators_info)
+#     }
+#   )
+#   filename = abspath("nginx.conf")
+# }
 
 # NGINX Docker image
-resource "docker_image" "nginx" {
-  name         = "nginx:1.25.3"
-  keep_locally = true
-}
+# resource "docker_image" "nginx" {
+#   name         = "nginx:1.25.3"
+#   keep_locally = true
+# }
 
-# NGINX Docker container
-resource "docker_container" "nginx" {
-  image = docker_image.nginx.image_id
-  name  = "avax_nginx"
-  ports {
-    internal = 80
-    external = 80
-  }
-  mounts {
-    target = "/etc/nginx/nginx.conf"
-    type   = "bind"
-    source = local_file.nginx_conf.filename
-  }
-}
+# # NGINX Docker container
+# resource "docker_container" "nginx" {
+#   image = docker_image.nginx.image_id
+#   name  = "avax_nginx"
+#   ports {
+#     internal = 80
+#     external = 80
+#   }
+#   mounts {
+#     target = "/etc/nginx/nginx.conf"
+#     type   = "bind"
+#     source = local_file.nginx_conf.filename
+#   }
+# }
 
 
 # resource "aws_instance" "fuji_node" {
