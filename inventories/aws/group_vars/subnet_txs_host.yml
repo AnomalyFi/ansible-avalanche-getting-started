@@ -6,7 +6,6 @@ subnet_blockchains_list:
   - name: AshTokenvm
     vm: tokenvm
     genesis_data:
-      hrp: token
       stateBranchFactor: 16
       minBlockGap: 100
       minEmptyBlockGap: 2000
@@ -35,23 +34,19 @@ subnet_blockchains_list:
         - 2500
         - 15000
       validityWindow: 60000
+      maxActionsPerTx: 16
+      maxOutputsPerAction: 1
       baseUnits: 1
-      baseWarpUnits: 1024
-      warpUnitsPerSigner: 128
-      outgoingWarpComputeUnits: 1024
-      coldStorageKeyReadUnits: 5
-      coldStorageValueReadUnits: 2
-      warmStorageKeyReadUnits: 1
-      warmStorageValueReadUnits: 1
-      storageKeyCreateUnits: 20
-      storageKeyValueUnits: 5
-      coldStorageKeyModificationUnits: 10
-      coldStorageValueModificationUnits: 3
-      warmStorageKeyModificationUnits: 5
-      warmStorageValueModificationUnits: 3
+      storageKeyReadUnits: 5
+      storageValueReadUnits: 2
+      storageKeyAllocateUnits: 20
+      storageValueAllocateUnits: 5
+      storageKeyWriteUnits: 10
+      storageValueWriteUnits: 3
       customAllocation:
         - address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
           balance: 10000000000000000000
+
 
 # Private key of the pre-funded account
 subnet_txs_private_key: PrivateKey-ewoqjP7PxY4yr3iLTpLisriqt94hdyDFNgchSxGGztUrTXtNN
