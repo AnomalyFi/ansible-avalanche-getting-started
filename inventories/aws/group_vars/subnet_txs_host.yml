@@ -44,7 +44,7 @@ subnet_blockchains_list:
       storageKeyWriteUnits: 10
       storageValueWriteUnits: 3
       customAllocation:
-        - address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
+        - address: token1qrzvk4zlwj9zsacqgtufx7zvapd3quufqpxk5rsdd4633m4wz2fdj73w34s
           balance: 10000000000000000000
 
 
