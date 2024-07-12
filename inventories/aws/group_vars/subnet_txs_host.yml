@@ -34,7 +34,7 @@ subnet_blockchains_list:
         - 2500
         - 15000
       validityWindow: 60000
-      maxActionsPerTx: 16
+      maxActionsPerTx: 64
       maxOutputsPerAction: 1
       baseUnits: 1
       storageKeyReadUnits: 5
