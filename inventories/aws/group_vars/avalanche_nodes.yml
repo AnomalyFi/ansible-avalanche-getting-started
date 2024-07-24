@@ -46,3 +46,5 @@ avalanchego_vms_list:
       0.9.11:
         ge: 1.11.6
         le: 1.11.6
+
+validator_end_time_command: 'date -d "3 days 2 minutes" --rfc-3339=seconds | tr " " T'
