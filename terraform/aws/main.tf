@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-2"
+  region = "us-east-1"
 }
 
 resource "tls_private_key" "pk" {
