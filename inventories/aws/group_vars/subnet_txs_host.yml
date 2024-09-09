@@ -3,8 +3,8 @@
 ---
 # Subnet configuration
 subnet_blockchains_list:
-  - name: AshTokenvm
-    vm: tokenvm
+  - name: NodekitSeqVM
+    vm: seqvm
     genesis_data:
       stateBranchFactor: 16
       minBlockGap: 100
@@ -44,7 +44,7 @@ subnet_blockchains_list:
       storageKeyWriteUnits: 10
       storageValueWriteUnits: 3
       customAllocation:
-        - address: token1qrzvk4zlwj9zsacqgtufx7zvapd3quufqpxk5rsdd4633m4wz2fdj73w34s
+        - address: seq1qrzvk4zlwj9zsacqgtufx7zvapd3quufqpxk5rsdd4633m4wz2fdjlydh3t
           balance: 10000000000000000000
 
 
