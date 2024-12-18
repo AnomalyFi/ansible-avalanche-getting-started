@@ -98,6 +98,15 @@ resource "aws_security_group" "ssh_avax_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = "SEQ Permissioned API"
+    from_port   = 9652
+    to_port     = 9652
+    protocol    = "tcp"
+    # TODO: this needs to be replaced to the IP of the deployer machine
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     description = "Outbound traffic"
     from_port   = 0

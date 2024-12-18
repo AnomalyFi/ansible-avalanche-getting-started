@@ -28,6 +28,9 @@ avalanchego_chains_configs:
       enabled: true
       archiverType: sqlite
       dsn: /tmp/default.db
+    valRPCConfig:
+      derivePort: false
+      port: 9652
 
 avalanchego_subnets_configs:
   29uVeLPJB1eQJkzRemU8g8wZDw5uJRqpab5U2mX9euieVwiEbL:
