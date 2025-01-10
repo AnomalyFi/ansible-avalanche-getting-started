@@ -45,7 +45,11 @@ subnet_blockchains_list:
       storageValueWriteUnits: 3
       customAllocation:
         - address: seq1qrzvk4zlwj9zsacqgtufx7zvapd3quufqpxk5rsdd4633m4wz2fdjlydh3t
-          balance: 10000000000000000000
+          balance: 1000000000000000000
+        - address: seq1qy94dndd0wzru9gvq3ayw52ngcd2fuhyptt58f4a3eppjzpx573qg9cr7sm
+          balance: 1000000000000000000
+        - address: seq1qxg2p2au72mweweuyu3dx8dhla6gyky630azwsvnc69tvg0m6qx9uqms9wx
+          balance: 1000000000000000000
 
 
 # Private key of the pre-funded account
